@@ -2,7 +2,7 @@
 // Alumna: Lorena Muñoz
 
 // Bienvenida
-// alert("Haz encontrado la maleta de animales fantásticos de Newt Scamander\nPor favor ayuda a los animales asegurandote de que todos esten a salvo y bien")
+alert("Haz encontrado la maleta de animales fantásticos de Newt Scamander\nPor favor ayuda a los animales asegurandote de que todos esten a salvo y bien")
 
 //Constructor de criaturas
 class Criatura {
@@ -12,6 +12,7 @@ class Criatura {
         this.sexo = sexo
         this.habitat = habitat
     }
+
 }
 
 const criatura1 = new Criatura ("Teddy", "Escarbato", "Macho", "Urbano")
@@ -24,7 +25,7 @@ const criaturas = [criatura1, criatura2, criatura3, criatura4]
 //Menú inicial
 let inicio;
 do {
-    inicio = prompt("Si agregar un nuevo animal, escribe: 1\nSi encontrar algun animal según su habitat, escribe: 2\nSi quieres ver todos los animales en la maleta, escribe: 3\nDe lo contrario, escribe ESC ");
+    inicio = prompt("Si agregar un nuevo animal, escribe: 1\nSi encontrar algun animal según su habitat, escribe: 2\nSi quieres ver todos los animales en la maleta, escribe: 3\nPara saber cuantas criaturas hay en la maleta, escribe: 4\nDe lo contrario, escribe ESC ");
     switch(inicio) {
         case "1":
             agregarCriatura()
